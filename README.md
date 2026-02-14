@@ -76,6 +76,12 @@ npx prisma generate
 npx prisma migrate reset
 ```
 
+### 9️⃣ TRPC
+
+```bash
+npm install @trpc/server @trpc/client @trpc/tanstack-react-query @tanstack/react-query@latest zod client-only server-only
+```
+
 ---
 
 ## 📂 Project Status
