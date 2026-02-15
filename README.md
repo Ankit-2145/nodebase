@@ -82,6 +82,16 @@ npx prisma migrate reset
 npm install @trpc/server @trpc/client @trpc/tanstack-react-query @tanstack/react-query@latest zod client-only server-only
 ```
 
+### 🔟 Better Auth
+
+```bash
+npm install better-auth
+
+npx @better-auth/cli generate
+
+npx prisma migrate dev
+```
+
 ---
 
 ## 📂 Project Status
