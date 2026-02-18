@@ -90,6 +90,17 @@ npm install better-auth
 npx @better-auth/cli generate
 
 npx prisma migrate dev
+
+npx prisma generate
+```
+
+### 🔟 Inngest
+
+```bash
+npm install inngest
+
+npx --ignore-scripts=false inngest-cli@latest dev
+
 ```
 
 ---
