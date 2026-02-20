@@ -20,7 +20,16 @@ const page = () => {
     }),
   );
 
-  const testAi = useMutation(trpc.testAi.mutationOptions());
+  const testAi = useMutation(
+    trpc.testAi.mutationOptions({
+      onSuccess: () => {
+        toast.success("Job queued successfully");
+      },
+      onError: () => {
+        toast.error("Something went wrong");
+      },
+    }),
+  );
 
   return (
     <div className="min-h-screen min-w-screen flex items-center justify-center flex-col gap-y-6">
