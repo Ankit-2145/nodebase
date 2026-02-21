@@ -1,9 +1,9 @@
 import { SignupForm } from "@/features/auth/components/signup-form";
 import { requireUnAuth } from "@/lib/auth-utils";
 
-const page = async () => {
+const Page = async () => {
   await requireUnAuth();
   return <SignupForm />;
 };
 
-export default page;
+export default Page;
