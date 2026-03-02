@@ -68,6 +68,11 @@ export const Editor = ({ workflowId }: { workflowId: string }) => {
           nodeTypes={nodeComponents}
           onInit={setEditor}
           fitView
+          snapGrid={[10, 10]}
+          snapToGrid
+          panOnScroll
+          // panOnDrag={false}    // This allows to select multiple nodes at once but prevents x-axis movement with mouse
+          // selectionOnDrag
           // proOptions={{
           //   hideAttribution: true,
           // }}
