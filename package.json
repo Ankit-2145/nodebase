@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "ngrok:dev": "ngrok http 3000",
+    "format": "biome format --write",
+    "inngest:dev": "--ignore-scripts=false inngest-cli@latest dev",
+    "dev:all": "mprocs"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.45",
@@ -71,6 +74,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/toposort": "^2.0.7",
+    "dotenv-cli": "^11.0.0",
     "inngest-cli": "^1.17.0",
     "prisma": "^7.3.0",
     "shadcn": "^3.8.4",
